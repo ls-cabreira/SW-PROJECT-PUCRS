@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --main-background: rgb(14, 16, 37);
     --font-color1: rgb(207, 2, 159);
     --font-color2: rgb(255, 255, 255);
-    --font: "Raleway", sans-serif;
+    --font: "Montserrat", sans-serif;
 }
 
 body {
@@ -12,9 +12,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     font-family: var(--font);
     background-color: var(--main-background);
+}
+
+main {
+    min-height: 100vh;
 }
 
 header {

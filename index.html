@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/base.css">
     <link rel="stylesheet" href="/styles/main-page.css">
+    <script src="/js/kart.js" defer></script>
     <title>LS-MARKET</title>
 </head>
 
@@ -28,16 +29,20 @@
 
     <main>
         <section class="main_product1">
-            <div class="product-card">
-                <img src="/img/apples.webp" alt="maçãs" width="250px" height="200px">
-                <h2>Maçã</h2>
-                <p>R$10,99/kg</p>
-            </div>
 
             <div class="product-card">
                 <img src="/img/lettuce.webp" alt="alface" width="250px" height="200px">
                 <h2>Alface</h2>
-                <p>R$5,99/kg</p>
+                <p>R$<strong class="product_value" id="price">5.99</strong>/kg</p>
+
+                <input class="product-select" id="product-qtd" type="number" placeholder="QTD">
+                <button class="product-button" id="add-product">Adicionar</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/img/apples.webp" alt="maçãs" width="250px" height="200px">
+                <h2>Maçã</h2>
+                <p>R$12,00/kg</p>
             </div>
 
             <div class="product-card">
