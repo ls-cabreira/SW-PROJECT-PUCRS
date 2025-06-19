@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/base.css">
     <link rel="stylesheet" href="/styles/product.css">
+    <script src="/js/products.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
     <title>LS-MARKET</title>
 </head>
 
@@ -19,7 +22,7 @@
 
         <nav class="header_nav">
             <a href="/index.html">Home</a>
-            <a href="/f-v.html">Frutas e Verduras</a>
+            <a href="/htf.html">Hortifruti</a>
             <a href="/np.html">Não perecíveis</a>
             <a href="/hg.html">Higiene</a>
             <a href="/ch.html">Checkout</a>
@@ -27,45 +30,53 @@
     </header>
 
     <main>
-        <section class="main_product3">
-            <div class="product-card">
-                <img src="/img/toothpaste.jpg" alt="pasta de dente" width="250px" height="200px">
-                <h2>Pack Oral-B</h2>
-                <p>R$23,99/un</p>
+        <div id="carrosselProdutos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="product-card">
+                        <img src="/img/toothpaste.jpg" alt="pasta de dente" width="250px" height="200px">
+                        <h2 class="product-name">Pack Pasta de dente/un</h2>
+                        <p>R$<strong class="product-value">24.99</strong></p>
+
+                        <input class="product-select" type="number" min="1" placeholder="QTD">
+                        <button class="product-button" id="add-product">Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+
+                    <div class="product-card">
+                        <img src="/img/vanish.webp" alt="sabão" width="250px" height="200px">
+                        <h2 class="product-name">Sabão em pó/un</h2>
+                        <p>R$<strong class="product-value">17.99</strong></p>
+
+                        <input class="product-select" type="number" min="1" placeholder="QTD">
+                        <button class="product-button" id="add-product">Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="product-card">
+                        <img src="/img/water.jpg" alt="água sanitária" width="250px" height="200px">
+                        <h2 class="product-name">Água sanitária/kg</h2>
+                        <p>R$<strong class="product-value">7.99</strong></p>
+
+                        <input class="product-select" type="number" min="1" placeholder="QTD">
+                        <button class="product-button" id="add-product">Adicionar</button>
+                    </div>
+                </div>
             </div>
 
-            <div class="product-card">
-                <img src="/img/vanish.webp" alt="sabão em pó" width="250px" height="200px">
-                <h2>Sabão em Pó Vanish</h2>
-                <p>R$5,99/un</p>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrosselProdutos"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrosselProdutos"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
 
-            <div class="product-card">
-                <img src="/img/water.jpg" alt="água sanitária" width="250px" height="200px">
-                <h2>Água Sanitária Qboa</h2>
-                <p>R$7,49/un</p>
-            </div>
-        </section>
-
-        <section class="main_product3">
-            <div class="product-card">
-                <img src="/img/toothpaste.jpg" alt="pasta de dente" width="250px" height="200px">
-                <h2>Pack Oral-B</h2>
-                <p>R$23,99/un</p>
-            </div>
-
-            <div class="product-card">
-                <img src="/img/vanish.webp" alt="sabão em pó" width="250px" height="200px">
-                <h2>Sabão em Pó Vanish</h2>
-                <p>R$5,99/un</p>
-            </div>
-
-            <div class="product-card">
-                <img src="/img/water.jpg" alt="água sanitária" width="250px" height="200px">
-                <h2>Água Sanitária Qboa</h2>
-                <p>R$7,49/un</p>
-            </div>
-        </section>
     </main>
 
     <footer>

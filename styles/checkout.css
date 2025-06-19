@@ -25,6 +25,10 @@ main {
     padding: 0.5rem 1rem;
 }
 
+.item_name {
+    color: var(--font-color2);
+}
+
 .kart_total {
     text-align: center;
     color: var(--font-color1);

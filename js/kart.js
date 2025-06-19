@@ -1,6 +1,6 @@
 const kartItem = document.getElementById('kart');
 const clearButton = document.getElementById('remove-all');
-const kartTotal = document.getElementById('total');
+export const kartTotal = document.getElementById('total');
 
 document.addEventListener('DOMContentLoaded', () => {
     let productList = JSON.parse(localStorage.getItem("products")) || [];

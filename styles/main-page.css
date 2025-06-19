@@ -7,14 +7,23 @@ img {
     height: 200px;
 }
 
-.main_product1,
-.main_product2,
-.main_product3 {
+.main_title {
+    text-align: center;
+    border-bottom: 0.1rem solid var(--font-color1);
+    color: var(--font-color2);
+    max-width: 40%;
+    margin: 0 auto;
+    font-size: 1.3rem;
+}
+
+.main_product {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     column-gap: 1rem;
-    margin: 2rem;
+    margin: 1rem auto;
     border: 0.4rem solid var(--font-color1);
+    color: var(--font-color2);
     padding: 1rem;
     border-radius: 1rem;
     text-align: center;
@@ -52,7 +61,10 @@ img {
 
 .services_title {
     font-size: 1.3rem;
-    color: var(--font-color1);
+    color: var(--font-color2);
+    border-bottom: 0.1rem solid var(--font-color1);
+    max-width: 40%;
+    margin: 0 auto;
 }
 
 .services_box {

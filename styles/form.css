@@ -1,0 +1,31 @@
+.client {
+    width: 200px;
+    text-align: left;
+    border: 0.5rem solid var(--font-color1);
+    border-radius: 1rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    color: var(--font-color2);
+}
+
+input {
+    color: var(--font-color2);
+    background-color: var(--main-background);
+    border: 0.2rem solid var(--font-color1);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+select,
+button {
+    color: var(--font-color2);
+    background-color: var(--main-background);
+    border: 0.2rem solid var(--font-color1);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+select {
+    margin-top: 0.3rem;
+}
