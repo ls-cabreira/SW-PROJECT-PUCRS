@@ -8,5 +8,7 @@ Neste trabalho, será desenvolvido um sistema web de minimercado, onde o usuári
 ## Fase 1
 Na primeira fase, foi desenvolvida a base em HTML da página, com a exibição de três produtos de cada categoria requisitada, uma seção de descrição de serviços e páginas individuais para cada categoria. Também foi implementada a estrutura inicial de uma página de checkout, onde o usuário irá visualizar seus dados, produtos escolhidos, o total da compra e o tipo de serviço selecionado. 
 
-Na página de checkout, foi implementada uma lista de dados do cliente, que serão recebidos de por meio de um formulário a ser implementado na fase 2, juntamente com o sistema de carrinho virtual, para que seja gerada uma tela de confirmação, contendo as informações do cliente, os produtos selecionados, valor final da compra e o tipo de serviço selecionado.
-As funcionalidades citadas serão implementadas utilizando JavaScript e estilização por meio do CSS em arquivos separados.
+## Fase 2
+O sistema de carrinho foi implementado, para adicionar os produtos, o usuário deve navegar pelas páginas de cada categoria e selecionar a quantidade de cada produto desejado. Na aba de checkout, é exibido os produtos do carrinho com subtotal de cada adição e o total da compra. Nesta mesma aba, há o formulário de cadastro para enviar um pedido, neste formulário, é necessário preencher o nome, cpf, e-mail, telefone, endereço e selecionar o tipo de recebimento, sendo entrega ou retirada.
+
+Ao enviar a ordem, um aviso no navegador contendo parte dos dados de cadastro e o valor total da ordem é exibido no navegador, confirmando o pedido. Após este aviso, a página é recarregada para o envio de uma nova ordem.
