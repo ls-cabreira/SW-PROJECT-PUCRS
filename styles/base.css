@@ -2,6 +2,7 @@
 
 :root {
     --main-background: rgb(14, 16, 37);
+    --secondary-background: rgb(201, 4, 24);
     --font-color1: rgb(207, 2, 159);
     --font-color2: rgb(255, 255, 255);
     --font: "Montserrat", sans-serif;

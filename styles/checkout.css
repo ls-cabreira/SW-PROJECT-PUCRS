@@ -1,7 +1,12 @@
+main {
+    text-align: center;
+}
+
 .main_kart {
     border: 0.5rem solid var(--font-color1);
     padding: 1rem;
     border-radius: 2rem;
+    text-align: center;
 }
 
 .kart_title {
@@ -14,6 +19,7 @@
 .kart_item {
     display: flex;
     justify-content: center;
+    align-items: center;
     column-gap: 1rem;
     border-bottom: 0.2rem solid var(--font-color1);
     padding: 0.5rem 1rem;
@@ -23,4 +29,23 @@
     text-align: center;
     color: var(--font-color1);
     margin-top: 1rem;
+}
+
+.clear-btn {
+    margin-top: 1rem;
+    background-color: var(--main-background);
+    color: var(--font-color1);
+    border: 0.5rem solid var(--font-color1);
+    border-radius: 1.5rem;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+}
+
+.remove-item {
+    background-color: var(--secondary-background);
+    color: var(--font-color2);
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: 0.3rem;
 }

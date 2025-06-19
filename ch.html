@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/base.css">
     <link rel="stylesheet" href="/styles/checkout.css">
+    <script src="/js/kart.js" defer></script>
     <title>LS-MARKET</title>
 </head>
 
@@ -27,29 +28,13 @@
     </header>
 
     <main>
-        <section class="main_kart">
+        <section class="main_kart" id="kart">
             <h2 class="kart_title">Seu carrinho</h2>
 
-            <div class="kart_item" id="kart-box">
-                <h3 class="item_name">Maçã/kg</h3>
-                <p class="item_qtd"><strong>3</strong>x</p>
-                <p class="item_total">R$12,00</p>
-            </div>
 
-            <div class="kart_item" id="kart-box">
-                <h3 class="item_name">Maçã/kg</h3>
-                <p class="item_qtd"><strong>3</strong>x</p>
-                <p class="item_total">R$12,00</p>
-            </div>
-
-            <div class="kart_item" id="kart-box">
-                <h3 class="item_name">Maçã/kg</h3>
-                <p class="item_qtd"><strong>3</strong>x</p>
-                <p class="item_total">R$12,00</p>
-            </div>
-
-            <h3 class="kart_total">Total:<strong>R$32,00</strong></h3>
         </section>
+        <h3 class="kart_total">Total: R$<strong id="total">00.00</strong></h3>
+        <button class="clear-btn" id="remove-all">Limpar</button>
     </main>
 
     <footer>
